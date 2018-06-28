@@ -99,6 +99,6 @@ until counter == 9
   if won?(board)
     puts "Congratulations you won!"
     elsif draw?(board)
-    puts "There has been a draw"
+    puts "Cat's game"
   end
 end
