@@ -96,7 +96,7 @@ until over?(board)
     turn(board)
   if won?(board) && current_player(board) == "X"
     puts "Congratulations X!"
-    elsif won?board && current_player(board) == "O"
+    elsif won?(board) && current_player(board) == "O"
     puts "Congratulations O!"
     elsif draw?(board)
     puts "Cat's game!"
