@@ -62,15 +62,6 @@ def current_player(board)
   end
 end
 
-# def play(board)
-# counter = 0 
-# until counter == 9
-#     counter += 1
-#     turn(board)
-#   end
-# end
-
-
 
 def draw?(board)
   !won?(board) && full?(board)
@@ -96,5 +87,13 @@ def winner(board)
   win_combo = won?(board)
   if won?(board)
     return board[win_combo[0]]
+  end
+end
+
+def play(board)
+counter = 0 
+until counter == 9
+    counter += 1
+    turn(board)
   end
 end
