@@ -96,4 +96,9 @@ until counter == 9
     counter += 1
     turn(board)
   end
+  if won?(board)
+    puts "Congratulations you won!"
+    elsif draw?(board)
+    puts "There has been a draw"
+  end
 end
