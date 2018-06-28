@@ -84,7 +84,7 @@ def over?(board)
 end
 
 def winner(board)
-  win_combo = won?(board)
+  win_combo = won?(board) #resulting array from #won? is set to win_combo variable
   if won?(board)
     return board[win_combo[0]]
   end
