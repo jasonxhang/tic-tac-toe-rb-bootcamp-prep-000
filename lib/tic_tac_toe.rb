@@ -91,6 +91,7 @@ def winner(board)
 end
 
 def play(board)
+  puts "Welcome to Tic Tac Toe!"
 until over?(board)
     turn(board)
   if won?(board) && current_player(board) == "X"
